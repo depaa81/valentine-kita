@@ -17,7 +17,7 @@ setInterval(() => {
     document.getElementById("slide").src = images[i];
 }, 3000);
 
-const startDate = new Date("29-12-2025");
+const startDate = new Date("2025-12-29");
 setInterval(() => {
     const now = new Date();
     const diff = now - startDate;
