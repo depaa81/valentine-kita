@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine Special 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="lockScreen" class="lock-screen">
+    <h2>Masukkan PIN Cinta 💌</h2>
+    <input type="password" id="pinInput" placeholder="Masukkan PIN">
+    <button onclick="checkPin()">Masuk 💖</button>
+    <p id="error"></p>
+</div>
+
+<div id="mainContent" style="display:none;">
+    <div class="container">
+        <h1>Happy Valentine Sayang 💕</h1>
+        <p>Kamu adalah orang yang paling aku sayang banget ❤️</p>
+
+        <div class="slideshow">
+            <img id="slide" src="foto1.jpg">
+        </div>
+
+        <h2 id="countdown"></h2>
+
+        <div class="btn-group">
+            <button onclick="yesClick()">YES 💖</button>
+            <button id="noBtn">NO 😜</button>
+        </div>
+    </div>
+
+    <audio autoplay loop>
+        <source src="penjaga_hati.mp3" type="audio/mp3">
+    </audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
