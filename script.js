@@ -36,3 +36,18 @@ noBtn.addEventListener("mouseover", () => {
     noBtn.style.left = Math.random() * window.innerWidth + "px";
     noBtn.style.top = Math.random() * window.innerHeight + "px";
 });
+function playMusic() {
+    const music = document.getElementById("bgMusic");
+    music.play();
+}
+function playMusic() {
+    const music = document.getElementById("bgMusic");
+
+    if (music.paused) {
+        music.play();
+        event.target.innerText = "⏸ Pause Lagu";
+    } else {
+        music.pause();
+        event.target.innerText = "🎵 Putar Lagu";
+    }
+}
