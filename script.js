@@ -51,3 +51,32 @@ function playMusic() {
         event.target.innerText = "🎵 Putar Lagu";
     }
 }
+
+// EFEK TYPING TEXT
+const text = `Sejak tanggal 29 Desember 2025,
+hidup aku berubah jadi lebih indah.
+
+Setiap hari bersamamu adalah hadiah terindah yang pernah aku punya.
+Terima kasih sudah hadir, sudah sabar, dan selalu ada untuk aku.
+
+Walaupun kita baru 47 hari bersama,
+rasanya seperti sudah lama banget.
+
+Kamu bukan cuma pacar,
+tapi juga tempat pulang dan alasan aku tersenyum setiap hari.
+
+Happy Valentine Sayang 💕
+Aku sayang kamu lebih dari yang bisa kata-kata jelaskan ❤️`;
+
+let index = 0;
+const speed = 40; // makin kecil makin cepat
+
+function typeWriter() {
+    if (index < text.length) {
+        document.getElementById("typingText").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
+window.onload = typeWriter;
