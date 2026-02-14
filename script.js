@@ -1,6 +1,6 @@
 
 function checkPin() {
-    const correctPin = "1402";
+    const correctPin = "29122025";
     const input = document.getElementById("pinInput").value;
     if (input === correctPin) {
         document.getElementById("lockScreen").style.display = "none";
